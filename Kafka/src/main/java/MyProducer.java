@@ -33,7 +33,7 @@ public class MyProducer {
                 String fileName="F:\\kafkaTest\\special.txt";
                 BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
                 String value=null;
-                while((value=bufferedReader.readLine())!=""){
+                while((value=bufferedReader.readLine())!=null){
 
                     ProducerRecord<String, String> record = new ProducerRecord<>("transaction", value);
                     producer.send(record);

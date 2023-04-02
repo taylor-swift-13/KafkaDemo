@@ -1,7 +1,6 @@
-import PO.SdkData;
-import com.alibaba.fastjson.JSON;
-import org.apache.kafka.clients.producer.ProducerRecord;
 
+import com.alibaba.fastjson.JSON;
+import PO.SdkData;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
